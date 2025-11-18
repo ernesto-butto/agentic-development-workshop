@@ -1,3 +1,42 @@
+# Context Engineering, Claude Code And The PRP Framework Workshop
+
+A hands-on, production-focused workshop teaching software teams to ship faster and with higher quality using **Context Engineering** principles, the **PRP Framework**, and **Claude Code**.
+
+**Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)
+**Primary Tool:** [Claude Code](https://www.claude.com/product/claude-code)
+**PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
+**Format:** Virtual, 4 sessions
+
+
+---
+
+## 👥 Who This Is For
+
+This workshop is designed for anyone involved in software delivery:
+- Software Engineers & Engineering Managers
+- Product Managers
+- QA Engineers
+- DevOps Engineers
+
+**Prerequisites:**
+- Basic understanding of software development workflows and git/GitHub
+- Active project or codebase you're currently working on
+- Ability to experiment with AI tools in your development workflow
+
+---
+
+## 🏗️ Workshop Approach
+
+This is a **hands-on, production-focused workshop**. You'll learn by doing.
+
+**Between sessions, you will:**
+- Apply learned techniques to your current work
+- Use Claude Code for actual tasks and features you're building
+- Experiment with the PRP Framework in your team's codebase
+- Track your progress and bring questions/insights to each session
+
+---
+
 # Session 1: Foundations
 
 ## Context Engineering & PRP Framework Workshop
