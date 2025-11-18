@@ -59,10 +59,9 @@ It’s usually because the LLM call inside the agent took the wrong action / did
 2. The “right” context was not passed to the LLM
 3. Agents System prompt might get in the way
 
-More often than not - it’s actually the second reason that causes agents to not be reliable.
+> More often than not - it’s actually the second reason that causes agents to not be reliable. (https://docs.langchain.com/oss/python/langchain/context-engineering)
 
-- https://docs.langchain.com/oss/python/langchain/context-engineering
-
+### Missing Context such as
 - Vague requirements lead to incomplete implementations
 - Missing context squeezes out useful tokens
 - No tool access or access to wrong tools or knowledge on how to use them prevent agent to work autonomously
@@ -85,11 +84,11 @@ The **engineering** problem at hand is optimizing the utility of those tokens 
 ## The PRP Solution based on Context Engineering
 
 **Quick Poll PRD**
-- Who knew what a PRD is?
+- Who has experience with PRDs?
 - PRPD: A Product Requirements Document (PRD) is a key document in product management that defines a product’s specifications, features, and requirements.
 - It deliverly leaves out how to build it
 
-**What is a PRP**
+**What is a PRP?**
 - PRP -> Product Requirements Prompt
 - PRP = PRD + curated codebase intelligence + agent/runbook
 - PRP = PRD + Context + Implementation + Validation
@@ -102,8 +101,6 @@ The **engineering** problem at hand is optimizing the utility of those tokens 
 - Structured prompts with complete context
 - Production-ready code on the first pass
 - Ship robust, production-ready systems
-
-
 
 ### The Analogy
 
@@ -131,20 +128,16 @@ But because they are not human, we need to organize the project for them in a di
 
 
 
-## The PRP Framework
 
-Help us integrate all of these concepts conviniently, fast and properly, allowing us to custumize it and acquire an instict.
-
-- Research → Plan → Review → Execute cycle
-- `prp-base-create -> prp-base-execute`
 
 ## The Demo: Delete a Blueprint
 
 Basic Workflow 1.
-
-**Demo Video:** https://youtu.be/CpmhipO4yR0
-
-Conversations and Q&A
+- Research → Plan → Review → Execute cycle -> Execute -> Reflect
+- Learning Loop: How much did we miss? If missing much e.g. Output 60% done, review the PRP base and retry
+- `prp-base-create -> prp-base-execute`
+- **Demo Video:** https://youtu.be/CpmhipO4yR0
+- Conversations and Q&A
 
 ## Post Demo: Step by Step Dive
 
