@@ -233,7 +233,9 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ---
 
-## What's Coming Next
+## Future Sessions
+
+- WIP
 
 ### PRP
 
