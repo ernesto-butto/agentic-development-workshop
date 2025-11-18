@@ -43,8 +43,8 @@ This is a **hands-on, production-focused workshop**. You'll learn by doing.
 ### What You'll Experience Today
 
 1. **Understand** why context is so important
-2. **See** a complete feature built in using good context engineering with Claude Code and the PRP framework.
-3. **Learn** about the basic PRP workflow: `prp-base-create -> prp-base-execute` and it's related principles
+2. **See** a complete feature built using good context engineering with Claude Code and the PRP framework.
+3. **Learn** about the basic PRP workflow: `prp-base-create -> prp-base-execute` and its related principles
 
 ## Why do A.I. Agents fail (in general)?
 
@@ -56,15 +56,15 @@ Quick Poll
 It’s usually because the LLM call inside the agent took the wrong action / didn’t do what we expected. LLMs fail for a few reasons:
 
 1. The underlying LLM is not capable enough
-2. The “right” context was not passed to the LLM
-3. Agents System prompt might get in the way
+2. The "right" context was not passed to the LLM
+3. Agent's System prompt might get in the way
 
 > More often than not - it’s actually the second reason that causes agents to not be reliable. (https://docs.langchain.com/oss/python/langchain/context-engineering)
 
 ### Missing Context such as
 - Vague requirements lead to incomplete implementations
 - Missing context squeezes out useful tokens
-- No tool access or access to wrong tools or knowledge on how to use them prevent agent to work autonomously
+- No tool access or access to wrong tools or knowledge on how to use them prevent agents to work autonomously
 - No validation gates allow defects to accumulate
 - Brittle code that breaks in production
 
@@ -78,26 +78,26 @@ The **engineering** problem at hand is optimizing the utility of those tokens 
 
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 
-<img src="resources/images/callibrating-prompt.png" alt="callibrating-prompt" width="500"/>
+<img src="resources/images/calibrating-prompt.png" alt="calibrating-prompt" width="500"/>
 
 
 ## The PRP Solution based on Context Engineering
 
 **Quick Poll PRD**
 - Who has experience with PRDs?
-- PRPD: A Product Requirements Document (PRD) is a key document in product management that defines a product’s specifications, features, and requirements.
-- It deliverly leaves out how to build it
+- PRD: A Product Requirements Document (PRD) is a key document in product management that defines a product's specifications, features, and requirements.
+- It deliberately leaves out how to build it
 
 **What is a PRP?**
 - PRP -> Product Requirements Prompt
 - PRP = PRD + curated codebase intelligence + agent/runbook
 - PRP = PRD + Context + Implementation + Validation
-- The minimum viable packet an AI needs to ship production-ready code
+- The minimum viable package an AI needs to ship production-ready code
 
 **Context Structure**
 - Explicit implementation strategies
 - Built-in validation and quality gates
-- Everything fine tuned for a project
+- Everything fine-tuned for a project
 - Structured prompts with complete context
 - Production-ready code on the first pass
 - Ship robust, production-ready systems
@@ -127,13 +127,10 @@ But because they are not human, we need to organize the project for them in a di
 - It's not the same using the tools as copilots than as agents. Why?
 
 
-
-
-
 ## The Demo: Delete a Blueprint
 
-Basic Workflow 1.
-- Research → Plan → Review → Execute cycle -> Execute -> Reflect
+Basic Workflow:
+- Research → Plan → Review → Execute → Reflect
 - Learning Loop: How much did we miss? If missing much e.g. Output 60% done, review the PRP base and retry
 - `prp-base-create -> prp-base-execute`
 - **Demo Video:** https://youtu.be/CpmhipO4yR0
@@ -152,10 +149,10 @@ Basic Workflow 1.
 
 ## Why learn Context Engineering Skills
 
-- It’s a skill that as you become better, it gets you closer to building production ready code in the first try
+- It's a skill that as you become better, it gets you closer to building production-ready code in the first try
 - As you understand the principles through practice using the PRP framework, you can
     - Use other Coding Agents besides Claude Code
-    - User other Frameworks besides the PRP framework
+    - Use other Frameworks besides the PRP framework
 - You can ship quality + speed, which has been usually a tradeoff. Example of TDD for me, sometimes is the only way it works.
 - Levels up our knowledge faster, forcing us to review and understand the plans
 - It’s fun
@@ -171,7 +168,7 @@ Basic Workflow 1.
 
 Storing important information outside the immediate context window, such as plans, notes (scratchpads), or memories that persist across sessions. This helps agents retain critical knowledge without overcrowding their working memory.
 
-- [CLAUDE.md](http://claude.md/) files, plans, notes
+- CLAUDE.md files, plans, notes
 - Persistent memory across sessions
 - Stores team conventions automatically
 
@@ -257,8 +254,8 @@ Splitting up context into isolated environments or sub-agents to handle differen
 - Detailed PRs
 - Detailed commits
 - Thoughts on a review using 'gh cli'
-- VCS / Git operations (merge, rebase, branching
-- MCPs: Jira, Context7, MPC Browser and Playwrite, Figma
+- VCS / Git operations (merge, rebase, branching)
+- MCPs: Jira, Context7, MCP Browser and Playwright, Figma
 - Generate changelog and documentation (show my documentation command)
 - Claude Code Planning mode resembles the PRP experience, but I find it much less reliable
 
