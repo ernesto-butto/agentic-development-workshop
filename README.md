@@ -39,7 +39,6 @@ This is a **hands-on, production-focused workshop**. You'll learn by doing.
 
 # Session 1: Foundations
 
-## Context Engineering & PRP Framework Workshop
 ### What You'll Experience Today
 
 1. **Understand** why context is so important
@@ -48,7 +47,7 @@ This is a **hands-on, production-focused workshop**. You'll learn by doing.
 
 ## Why do A.I. Agents fail (in general)?
 
-Quick Poll
+### Quick Poll: AI Coding Tools Experience
 
 - "Who's used AI coding tools?"
 - "Who's been frustrated when AI doesn't get it?"
@@ -83,7 +82,7 @@ The **engineering** problem at hand is optimizing the utility of those tokens 
 
 ## The PRP Solution based on Context Engineering
 
-**Quick Poll PRD**
+### Quick Poll: Product Requirements Documents
 - Who has experience with PRDs?
 - PRD: A Product Requirements Document (PRD) is a key document in product management that defines a product's specifications, features, and requirements.
 - It deliberately leaves out how to build it
@@ -119,32 +118,6 @@ Think about onboarding a new engineer:
 
 But because they are not human, we need to organize the project for them in a different way. (Paradigm shift)
 
-## Agentic Coding Tools vs Copilots vs Models
-
-- Copilot story: It’s not the same to use *Claude Sonnet* with **Cursor** than with **Claude Code.** Why?
-    - Celonis Developer Story of Cursor vs Claude Code both using Sonnet for the same feature.
-        - Same prompt worked for Claude Code, not Cursor. Why?
-- It's not the same using the tools as copilots than as agents. Why?
-
-
-## The Demo: Delete a Blueprint
-
-Basic Workflow:
-- Research → Plan → Review → Execute → Reflect
-- Learning Loop: How much did we miss? If missing much e.g. Output 60% done, review the PRP base and retry
-- `prp-base-create -> prp-base-execute`
-- **Demo Video:** https://youtu.be/CpmhipO4yR0
-- Conversations and Q&A
-
-## Post Demo: Step by Step Dive
-
-- Review the [prp-base-create](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/.claude/commands/prp-commands/prp-base-create.md) command step by step
-- Review the [prp-base-execute](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/.claude/commands/prp-commands/prp-base-execute.md) command step by step
-
----
-
-**Break**
-
 ---
 
 ## Why learn Context Engineering Skills
@@ -155,12 +128,49 @@ Basic Workflow:
     - Use other Frameworks besides the PRP framework
 - You can ship quality + speed, which has been usually a tradeoff. Example of TDD for me, sometimes is the only way it works.
 - Levels up our knowledge faster, forcing us to review and understand the plans
-- It’s fun
+- It's fun
+
+---
+
+## Agentic Coding Tools vs Copilots vs Models
+
+Before we dive into the demo, let's clarify an important distinction:
+
+- Copilot story: It’s not the same to use *Claude Sonnet* with **Cursor** than with **Claude Code.** Why?
+    - Celonis Developer Story of Cursor vs Claude Code both using Sonnet for the same feature.
+        - Same prompt worked for Claude Code, not Cursor. Why?
+- It's not the same using the tools as copilots than as agents. Why?
+
+---
+
+## The Demo: Delete a Blueprint
+
+We'll demonstrate the PRP workflow by implementing a feature to delete a blueprint in a production codebase. This will show you how Context Engineering principles translate into actual development work.
+
+Basic Workflow:
+- Research → Plan → Review → Execute → Reflect
+- Learning Loop: How much did we miss? If missing much e.g. Output 60% done, review the PRP base and retry
+- `prp-base-create -> prp-base-execute`
+- **Demo Video:** https://youtu.be/CpmhipO4yR0
+- Conversations and Q&A
+
+## Deep Dive: Understanding the PRP Commands
+
+- Review the [prp-base-create](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/.claude/commands/prp-commands/prp-base-create.md) command step by step
+- Review the [prp-base-execute](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/.claude/commands/prp-commands/prp-base-execute.md) command step by step
+
+---
+
+**Break**
+
+---
 
 ## Install Claude Code
 
 - https://code.claude.com/docs/en/quickstart
 - Ask if everyone has Claude Code installed and help.
+
+---
 
 ## The 4 Context Strategies
 
