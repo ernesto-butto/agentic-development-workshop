@@ -242,32 +242,33 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ## Future Sessions
 
-- WIP
+Based on your team's needs and interests, future sessions may cover:
 
-### PRP
+### PRP Framework Deep Dive
 
-- [Common Mistakes](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#common-mistakes-dont-do-these-)
+- [Common Mistakes](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#common-mistakes-dont-do-these-) and how to avoid them
 - The Task workflow
 - [Longer Workflows](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#the-magic-how-they-work-together-): The Master planning → Technical specs → Implementation manual → Build new feature
-- Personalizing templates
+- Personalizing templates for your codebase
     - Base templates
     - Execute templates
-- Good Vs Bad Practices
+- Good vs Bad Practices
 - More about [Chaining Workflows](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-command-chaining)
 - [Command list by Categories](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#command-categories-quick-reference-)
 
-### Agentic A.I.
+### Agentic Development Techniques
 
-- gemini code review
+- Code review workflows (using gemini and other tools)
 - Working on 2 branches at once
-- ultrathink and other keywords
-- Detailed PRs
-- Detailed commits
-- Thoughts on a review using 'gh cli'
+- Advanced prompting keywords (ultrathink, etc.)
+- Detailed PRs and commit practices
+- Review workflows using 'gh cli'
 - VCS / Git operations (merge, rebase, branching)
-- MCPs: Jira, Context7, MCP Browser and Playwright, Figma
-- Generate changelog and documentation (show my documentation command)
-- Claude Code Planning mode resembles the PRP experience, but I find it much less reliable
+- MCP integrations: Jira, Context7, MCP Browser and Playwright, Figma
+- Generate changelog and documentation
+- Claude Code Planning mode vs PRP workflows
+
+**Note:** The specific topics and order will be determined based on Session 1 discussions and your team's priorities.
 
 ---
 
