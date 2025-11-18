@@ -1,11 +1,11 @@
-# Context Engineering, Claude Code And The PRP Framework Workshop
+# Context Engineering & PRP Framework Workshop (with Claude Code)
 
 A hands-on, production-focused workshop teaching software teams to ship faster and with higher quality using **Context Engineering** principles, the **PRP Framework**, and **Claude Code**.
 
-**Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)
-**Primary Tool:** [Claude Code](https://www.claude.com/product/claude-code)
-**PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
-**Format:** Virtual, 4 sessions
+- **Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)
+- **Primary Tool:** [Claude Code](https://www.claude.com/product/claude-code)
+- **PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
+- **Format:** Virtual, 4 sessions
 
 
 ---
@@ -40,22 +40,11 @@ This is a **hands-on, production-focused workshop**. You'll learn by doing.
 # Session 1: Foundations
 
 ## Context Engineering & PRP Framework Workshop
-
-**Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)**Primary Tool:** [Claude Code](https://www.claude.com/product/claude-code)**PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
-
-## What You'll Experience Today
+### What You'll Experience Today
 
 1. **Understand** why context is so important
 2. **See** a complete feature built in using good context engineering with Claude Code and the PRP framework.
 3. **Learn** about the basic PRP workflow: `prp-base-create -> prp-base-execute` and it's related principles
-
-### Main Topics
-
-- Define the challanges
-- Context Engineering: Beyond the tools
-- Introduction to Claude Code + PRP Framework
-- Demo video with Claude Code and the basic PRP workflow
-- Q&A
 
 ## Why do A.I. Agents fail (in general)?
 
@@ -74,22 +63,47 @@ More often than not - it’s actually the second reason that causes agents to no
 
 - https://docs.langchain.com/oss/python/langchain/context-engineering
 
-## Why do A.I. Coding Agent fail?
-
 - Vague requirements lead to incomplete implementations
 - Missing context squeezes out useful tokens
 - No tool access or access to wrong tools or knowledge on how to use them prevent agent to work autonomously
 - No validation gates allow defects to accumulate
 - Brittle code that breaks in production
 
+## What is Context Engineering
+
+After a few years of prompt engineering being the focus of attention in applied AI, a new term has come to prominence: **context engineering**. Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of *“what configuration of context is most likely to generate our model’s desired behavior?"*
+
+**Context** refers to the set of tokens included when sampling from a large-language model (LLM).
+
+The **engineering** problem at hand is optimizing the utility of those tokens — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.
+
+- https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+<img src="resources/images/callibrating-prompt.png" alt="callibrating-prompt" width="500"/>
+
+
 ## The PRP Solution based on Context Engineering
 
+**Quick Poll PRD**
+- Who knew what a PRD is?
+- PRPD: A Product Requirements Document (PRD) is a key document in product management that defines a product’s specifications, features, and requirements.
+- It deliverly leaves out how to build it
+
+**What is a PRP**
+- PRP -> Product Requirements Prompt
+- PRP = PRD + curated codebase intelligence + agent/runbook
+- PRP = PRD + Context + Implementation + Validation
+- The minimum viable packet an AI needs to ship production-ready code
+
+**Context Structure**
 - Explicit implementation strategies
 - Built-in validation and quality gates
 - Everything fine tuned for a project
 - Structured prompts with complete context
 - Production-ready code on the first pass
 - Ship robust, production-ready systems
+
+
 
 ### The Analogy
 
@@ -115,17 +129,7 @@ But because they are not human, we need to organize the project for them in a di
         - Same prompt worked for Claude Code, not Cursor. Why?
 - It's not the same using the tools as copilots than as agents. Why?
 
-## What is Context Engineering
 
-After a few years of prompt engineering being the focus of attention in applied AI, a new term has come to prominence: **context engineering**. Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of *“what configuration of context is most likely to generate our model’s desired behavior?"*
-
-**Context** refers to the set of tokens included when sampling from a large-language model (LLM).
-
-The **engineering** problem at hand is optimizing the utility of those tokens — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.
-
-- https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
-
-<img src="resources/images/callibrating-prompt.png" alt="callibrating-prompt" width="500"/>
 
 ## The PRP Framework
 
