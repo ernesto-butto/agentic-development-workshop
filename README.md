@@ -61,15 +61,6 @@ It’s usually because the LLM call inside the agent took the wrong action / did
 
 > More often than not - it’s actually the second reason that causes agents to not be reliable. (https://docs.langchain.com/oss/python/langchain/context-engineering)
 
-### Missing Context such as
-- Vague requirements lead to incomplete implementations
-- Missing context squeezes out useful tokens
-- No tool access or access to wrong tools or knowledge on how to use them prevent agents from working autonomously
-- No validation gates allow defects to accumulate
-- Brittle code that breaks in production
-
-> **Key Insight**: Context means both *information* (what the agent knows) AND *capabilities* (what tools the agent can use). Missing either dimension causes failure.
-
 ## What is Context Engineering
 
 After a few years of prompt engineering being the focus of attention in applied AI, a new term has come to prominence: **context engineering**. Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of *“what configuration of context is most likely to generate our model’s desired behavior?"*
@@ -90,6 +81,14 @@ Context in agentic systems has two critical dimensions:
 
 <img src="resources/images/calibrating-prompt.png" alt="calibrating-prompt" width="500"/>
 
+### Some Issues with Missing Context
+- Vague requirements lead to incomplete implementations
+- Missing context squeezes out useful tokens (resulting in frustrating iterations to get it right and higher costs in time and money)
+- No tool access or access to wrong tools or knowledge on how to use them prevent agents from working autonomously
+- No validation gates allow defects to accumulate
+- Brittle code that breaks in production
+
+> **Key Insight**: Context means both *information* (what the agent knows) AND *capabilities* (what tools the agent can use).
 
 ## The PRP Solution based on Context Engineering
 
