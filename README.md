@@ -1,12 +1,13 @@
-# Context Engineering & PRP Framework Workshop (with Claude Code)
+# Context Engineering & PRP Framework Workshop (with AI Coding Agents)
 
 A hands-on, production-focused workshop teaching software teams to ship faster and with higher quality using **Context Engineering** principles, the **PRP Framework**, and **Claude Code**.
 
 - **Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)
-- **Primary Tool:** [Claude Code](https://www.claude.com/product/claude-code)
+- **Demo Tool:** [Claude Code](https://www.claude.com/product/claude-code) (principles apply to all agentic coding tools)
 - **PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
 - **Format:** Virtual, 4 sessions
 
+> **Note on Tools:** While this workshop demonstrates concepts using Claude Code, the **Context Engineering principles and PRP Framework are tool-agnostic**. These techniques work with any agentic coding tool—whether you use Gemini CLI, Cursor, Windsurf, Aider, Codex or others. The core concepts of structured context, validation gates, and systematic workflows apply universally.
 
 ---
 
@@ -136,10 +137,17 @@ But because they are not human, we need to organize the project for them in a di
 
 Before we dive into the demo, let's clarify an important distinction:
 
-- Copilot story: It’s not the same to use *Claude Sonnet* with **Cursor** than with **Claude Code.** Why?
+**Understanding Tool Architectures:**
+- **CLI Agents** (Claude Code, Gemini CLI, Aider) - Terminal-based agents with full system access
+- **IDE Agents** (Cursor, Windsurf) - Editor-integrated agents with native IDE features
+- **Copilots** - Autocomplete and chat assistants (GitHub Copilot, Tab9)
+
+**Key Insight:**
+- It's not the same to use *Claude Sonnet* with **Cursor** than with **Claude Code.** Why?
     - Celonis Developer Story of Cursor vs Claude Code both using Sonnet for the same feature.
         - Same prompt worked for Claude Code, not Cursor. Why?
 - It's not the same using the tools as copilots than as agents. Why?
+- **All agentic tools benefit from good Context Engineering** - whether you're using Claude Code, Gemini CLI, Cursor, or Windsurf
 
 ---
 
@@ -279,6 +287,10 @@ Based on your team's needs and interests, future sessions may cover:
 - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 - [PRP Framework Repository](https://github.com/Wirasm/PRPs-agentic-eng)
 - [Effective Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+
+### Related Protocols & Standards
+
+- [Agent Client Protocol (ACP)](https://agentclientprotocol.com/overview/introduction) - A standardized communication framework enabling interoperability between code editors/IDEs and AI coding agents, similar to how Language Server Protocol standardized language servers
 
 ### Demo Video
 
