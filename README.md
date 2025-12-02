@@ -64,9 +64,11 @@ It’s usually because the LLM call inside the agent took the wrong action / did
 ### Missing Context such as
 - Vague requirements lead to incomplete implementations
 - Missing context squeezes out useful tokens
-- No tool access or access to wrong tools or knowledge on how to use them prevent agents to work autonomously
+- No tool access or access to wrong tools or knowledge on how to use them prevent agents from working autonomously
 - No validation gates allow defects to accumulate
 - Brittle code that breaks in production
+
+> **Key Insight**: Context means both *information* (what the agent knows) AND *capabilities* (what tools the agent can use). Missing either dimension causes failure.
 
 ## What is Context Engineering
 
@@ -77,6 +79,14 @@ After a few years of prompt engineering being the focus of attention in applied 
 The **engineering** problem at hand is optimizing the utility of those tokens — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.
 
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
+**What does "context" include?**
+
+Context in agentic systems has two critical dimensions:
+
+1. **Information Context**: The data and knowledge available to the agent (conversation history, documentation, system instructions, project conventions)
+
+2. **Capability Context**: The tools and actions the agent can perform (file operations, code execution, web search, APIs, validation tools, etc.)
 
 <img src="resources/images/calibrating-prompt.png" alt="calibrating-prompt" width="500"/>
 
