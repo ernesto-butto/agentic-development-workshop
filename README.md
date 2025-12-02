@@ -43,8 +43,8 @@ This is a **hands-on, production-focused workshop** for brownfield projects. You
 ### What You'll Experience Today
 
 1. **Understand** why context is so important
-2. **See** a complete feature built using good context engineering with Claude Code and the PRP framework.
-3. **Learn** about the basic PRP workflow: `prp-base-create -> prp-base-execute` and its related principles
+2. **See (Video 37m)** a complete feature built using good context engineering with Claude Code and the PRP framework.
+3. **Learn** about the basic PRP workflow: `/prp-base-create -> /prp-base-execute` and its related principles
 
 ## Why do A.I. Agents fail (in general)?
 
