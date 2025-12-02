@@ -63,13 +63,15 @@ It’s usually because the LLM call inside the agent took the wrong action / did
 
 ## What is Context Engineering
 
+- https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
 After a few years of prompt engineering being the focus of attention in applied AI, a new term has come to prominence: **context engineering**. Building with language models is becoming less about finding the right words and phrases for your prompts, and more about answering the broader question of *“what configuration of context is most likely to generate our model’s desired behavior?"*
 
 **Context** refers to the set of tokens included when sampling from a large-language model (LLM).
 
 The **engineering** problem at hand is optimizing the utility of those tokens — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.
 
-- https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+
 
 **What does "context" include?**
 
@@ -82,7 +84,7 @@ Context in agentic systems has two critical dimensions:
 <img src="resources/images/calibrating-prompt.png" alt="calibrating-prompt" width="500"/>
 
 ### Some Issues with Missing Context
-- Vague requirements lead to incomplete implementations
+- Vague requirements lead to incomplete (or just wrong) implementations
 - Missing context squeezes out useful tokens (resulting in frustrating iterations to get it right and higher costs in time and money)
 - No tool access or access to wrong tools or knowledge on how to use them prevent agents from working autonomously
 - No validation gates allow defects to accumulate
