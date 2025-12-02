@@ -5,7 +5,7 @@ A hands-on, production-focused workshop teaching software teams to ship faster a
 - **Instructor:** [Ernesto Buttó](https://www.ernestobutto.com/)
 - **Demo Tool:** [Claude Code](https://www.claude.com/product/claude-code) (principles apply to all agentic coding tools)
 - **PRP Framework:** [PRPs-agentic-eng](https://github.com/Wirasm/PRPs-agentic-eng) by [Rasmus Widing](https://www.rasmuswiding.com/)
-- **Format:** Virtual, 4 sessions
+
 
 > **Note on Tools:** While this workshop demonstrates concepts using Claude Code, the **Context Engineering principles and PRP Framework are tool-agnostic**. These techniques work with any agentic coding tool—whether you use Gemini CLI, Cursor, Windsurf, Aider, Codex or others. The core concepts of structured context, validation gates, and systematic workflows apply universally.
 
@@ -20,7 +20,7 @@ This workshop is designed for anyone involved in software delivery:
 - DevOps Engineers
 
 **Prerequisites:**
-- Basic understanding of software development workflows and git/GitHub
+- Basic understanding of software development workflows and git
 - Active project or codebase you're currently working on
 - Ability to experiment with AI tools in your development workflow
 
@@ -28,7 +28,7 @@ This workshop is designed for anyone involved in software delivery:
 
 ## 🏗️ Workshop Approach
 
-This is a **hands-on, production-focused workshop**. You'll learn by doing.
+This is a **hands-on, production-focused workshop** for brownfield projects. You'll learn by doing.
 
 **Between sessions, you will:**
 - Apply learned techniques to your current work
