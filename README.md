@@ -253,17 +253,14 @@ Splitting up context into isolated environments or sub-agents to handle differen
 ## Activities
 
 - Create your first CLAUDE.md
-- Experiment with plan mode on real tasks
-- Experiment with pure PRP no plan mode for a real issue.
+- Understanding slash commands, [lets see a couple of them](https://github.com/Wirasm/PRPs-agentic-eng/tree/development/.claude/commands)
+- See simpler ways of planning -> executing
+- Showing plan mode in Claude Code (plans tend to have different structures, not as reliable)
 - Read [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 ---
 
-## Future Sessions
-
-Based on your team's needs and interests, future sessions may cover:
-
-### PRP Framework Deep Dive
+## PRP Framework Deep Dive
 
 - [Common Mistakes](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#common-mistakes-dont-do-these-) and how to avoid them
 - The Task workflow
