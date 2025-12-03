@@ -292,9 +292,14 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ### Essential Links
 
-- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) - Official best practices sections 1.a and 1.b cover CLAUDE.md
 - [PRP Framework Repository](https://github.com/Wirasm/PRPs-agentic-eng)
 - [Effective Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+
+### Tool-Specific Documentation
+
+- [Gemini CLI Documentation](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/gemini-md.md) - Official Gemini documentation
+- [CLAUDE.md Examples](https://github.com/Wirasm/PRPs-agentic-eng/tree/development/claude_md_files) - Example configuration files (applicable to Gemini as well)
 
 ### Related Protocols & Standards
 
