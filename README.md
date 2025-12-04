@@ -252,9 +252,9 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ## Activities
 
-- Create your first CLAUDE.md
+- Create your first GEMINI.md / CLAUDE.md
 - Understanding slash commands, [lets see a couple of them](https://github.com/Wirasm/PRPs-agentic-eng/tree/development/.claude/commands)
-- See simpler ways of planning -> executing
+- Explain that it's agnostic workflow: of planning -> executing. 
 - Showing plan mode in Claude Code (plans tend to have different structures, not as reliable)
 - Read [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
 
