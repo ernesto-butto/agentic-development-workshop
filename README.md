@@ -170,7 +170,7 @@ Basic Workflow:
 - Research → Plan → Review → Execute → Reflect
 - Learning Loop: How much did we miss? If missing much e.g. Output 60% done, review the PRP base and retry
 - `prp-base-create -> prp-base-execute`
-- **Demo Video:** https://youtu.be/CpmhipO4yR0
+- **Demo Video:** [https://youtu.be/CpmhipO4yR0](https://youtu.be/YWiogt322og)
 - Conversations and Q&A
 
 ## Deep Dive: Understanding the PRP Commands
@@ -302,7 +302,7 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ### Demo Video
 
-- [Delete a Blueprint Demo](https://youtu.be/CpmhipO4yR0)
+- [Delete a Blueprint Demo](https://youtu.be/YWiogt322og)
 
 ### Support
 
