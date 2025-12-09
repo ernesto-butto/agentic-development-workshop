@@ -71,8 +71,6 @@ After a few years of prompt engineering being the focus of attention in applied 
 
 The **engineering** problem at hand is optimizing the utility of those tokens — in other words: considering the holistic state available to the LLM at any given time and what potential behaviors that state might yield.
 
-
-
 **What does "context" include?**
 
 Context in agentic systems has two critical dimensions:
@@ -180,16 +178,7 @@ Basic Workflow:
 
 ---
 
-**Break**
-
----
-
-## Install Claude Code
-
-- https://code.claude.com/docs/en/quickstart
-- Ask if everyone has Claude Code installed and help.
-
----
+# Session 2: The 4 Strategies & PRP Workflows
 
 ## The 4 Context Strategies
 
@@ -227,29 +216,6 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ---
 
-## The Difference
-
-```
-❌ Bad Context:
-- Vague prompts
-- No project documentation
-- Full codebase dump
-- No conventions
-
-= Confused AI = Bad code = Hours of iteration
-
-✅ Good Context:
-- Clear project docs (CLAUDE.md)
-- Relevant files only
-- Compressed summaries
-- Focused sub-agents
-
-= Smart AI = Production code = Minutes to success
-
-```
-
----
-
 ## Activities
 
 - Create your first GEMINI.md / CLAUDE.md
@@ -260,17 +226,46 @@ Splitting up context into isolated environments or sub-agents to handle differen
 
 ---
 
+# Session 3: Agentic Coding & PRP Deeper Dive
+
+## Common Workflows & SubAgents 
+
+### Ovierview of Agentic Coding Common Workflows
+
+***Agentic Coding Common Workflows***
+- [Claude Code Workflows](https://code.claude.com/docs/en/common-workflows)
+
+***Sub Agents***
+
+<img src="resources/images/subAgents.jpg" alt="calibrating-prompt" width="500"/>
+
+- What is a sub-agent? https://code.claude.com/docs/en/sub-agents
+- PRP Framework sub-agents example: [codebase-analyst](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/.claude/agents/codebase-analyst.md)
+
 ## PRP Framework Deep Dive
 
-- [Common Mistakes](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#common-mistakes-dont-do-these-) and how to avoid them
-- The Task workflow
 - [Longer Workflows](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#the-magic-how-they-work-together-): The Master planning → Technical specs → Implementation manual → Build new feature
-- Personalizing templates for your codebase
-    - Base templates
-    - Execute templates
-- Good vs Bad Practices
+    - [The Renovation Specialist (/prp-spec-create) workflow](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-the-renovation-specialist-prp-spec-create)
+    - [The Project Foreman (/prp-task-create)](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-the-renovation-specialist-prp-spec-create)
+- [Common Mistakes](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#common-mistakes-dont-do-these-) and how to avoid them
 - More about [Chaining Workflows](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-command-chaining)
 - [Command list by Categories](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#command-categories-quick-reference-)
+
+## Activities
+
+We are going to use the [Bezkoder](https://github.com/bezkoder/angular-17-node-project) repositories to start with an already codebase of a very simple Angular + Node.js + MongoDB project (focused purely on CRUD—Create, Read, Update, Delete) . 
+
+It uses standard libraries, so we do not start from scratch, then we are going to use it to test the Agentic tools and PRP framework:
+
+- Setup project https://github.com/bezkoder/angular-17-node-project.git with Node Express as server and MongoDB database
+- Create a [Gemini.md](http://Gemini.md) or equivalent depending on coding agent
+- Install the PRP framework following the [README.md](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README.md)
+- Try the **`/prp-task-create` → `/prp-task-execute`  workflow**
+    - Need to adapt slash commands to Gemini or other agentic tool
+- Try the **`/prp-spec-create` → `/prp-spec-execute`**
+
+Note: Here is a [guideline](angular-17-node-mongo-db-setup.md)
+
 
 ### Agentic Development Techniques
 
