@@ -251,20 +251,9 @@ Splitting up context into isolated environments or sub-agents to handle differen
 - More about [Chaining Workflows](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-command-chaining)
 - [Command list by Categories](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#command-categories-quick-reference-)
 
-## Activities
+## Hands-on Workshop
 
-We are going to use the [Bezkoder](https://github.com/bezkoder/angular-17-node-project) repositories to start with an already codebase of a very simple Angular + Node.js + MongoDB project (focused purely on CRUD—Create, Read, Update, Delete) . 
-
-It uses standard libraries, so we do not start from scratch, then we are going to use it to test the Agentic tools and PRP framework:
-
-- Setup project https://github.com/bezkoder/angular-17-node-project.git with Node Express as server and MongoDB database
-- Create a [Gemini.md](http://Gemini.md) or equivalent depending on coding agent
-- Install the PRP framework following the [README.md](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README.md)
-- Try the **`/prp-task-create` → `/prp-task-execute`  workflow**
-    - Need to adapt slash commands to Gemini or other agentic tool
-- Try the **`/prp-spec-create` → `/prp-spec-execute`**
-
-Note: Here is a [guideline](angular-17-node-mongo-db-setup.md)
+Get started with our [Quick Start Workshop](workshop/README.md) - learn the PRP Framework in under 1 hour with a real Angular + Node.js + MongoDB project.
 
 
 ### Agentic Development Techniques
