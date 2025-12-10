@@ -1,21 +1,21 @@
 # PRP Framework Quick Start Workshop
 
-Get hands-on with the PRP Framework in 30 minutes using Gemini or another agentic tool, using a real Angular + Node.js + MongoDB project.
+Get hands-on with the PRP Framework in under 1h using Gemini or another agentic tool, with a real `Angular + Node.js + MongoDB` project.
 
 ## Prerequisites
 
 - Node.js (v16+)
 - Docker
 - Git
-- An AI coding agent (Gemini CLI, Codex CLI, Cursor, Claude Code, etc... )
+- An AI agentic coding tool, we will be using Gemini CLI
 
 ## Step 1: Setup Project (10 min)
 
 We'll be working with the [Bezkoder Angular 17 + Node.js project](https://github.com/bezkoder/angular-17-node-project). This is a simple CRUD (Create, Read, Update, Delete) application for managing tutorials. It's deliberately simple so we can focus on learning the PRP framework rather than wrestling with complex application logic.
 
-Choose either **Option A** (using your AI agent) or **Option B** (manual setup):
+Choose either **Option A** (using your agentic tool) or **Option B** (manual setup):
 
-### Option A: Setup with AI Agent
+### Option A: Setup with Agentic Tool
 
 ⚠️ This path requires giving the agent access to the terminal, meaning running it with the yolo mode flag: ` gemini --yolo`, allows the AI to automatically execute actions and commands without user confirmation. 
 
@@ -75,9 +75,9 @@ Test it: Open http://localhost:8081 in your browser and try creating a tutorial.
 
 ## Step 2: Create Project Context File (5 min)
 
-Create a context file for your AI agent:
+Create a context file for your agentic tool:
 
-**For Gemini CLI:** Create `GEMINI.md` at the rood folder.
+**For Gemini CLI:** Create `GEMINI.md` at the root folder.
 
 - You can start by copying [this example](https://codelabs.developers.google.com/gemini-cli-hands-on#9), and adjusting it a bit
 
@@ -86,7 +86,7 @@ Create a context file for your AI agent:
 ### Clone the PRP Repository and copy the contents
 
 - See instructions in https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README.md
-- It's ok to copy al files to a `.claude/` folder, we will move what we need and adjust it to a `.gemini/` folder later.
+- It's ok to copy all files to a `.claude/` folder, we will move what we need and adjust it to a `.gemini/` folder later.
 
 
 ### Review the PRP Commands
@@ -102,7 +102,7 @@ Read these to understand the workflow:
 - Review these two slash commands in your project, should be inside `.claude/commands/prp-commands`
 - Copy them to the gemini folder e.g. `.gemini/commands/prp-commands` (Create the path if it does not exist)
 - Adapt the command format to the agentic tool, in this case to Gemini: See [Gemini Custom Slash Command blog post](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands)
-- Tip: You can try and ask your AI agent to do this adaptation for you, giving it the documentation
+- Tip: You can try and ask your agentic tool to do this adaptation for you, giving it the documentation
 
 
 ## Step 4: Try the PRP Workflow (15 min)
