@@ -1,21 +1,27 @@
 # PRP Framework Quick Start Workshop
 
-Get hands-on with the PRP Framework in 30 minutes using a real Angular + Node.js + MongoDB project.
+Get hands-on with the PRP Framework in 30 minutes using Gemini or another agentic tool, using a real Angular + Node.js + MongoDB project.
 
 ## Prerequisites
 
 - Node.js (v16+)
 - Docker
 - Git
-- An AI coding agent (Claude Code, Gemini CLI, etc.)
+- An AI coding agent (Gemini CLI, Codex CLI, Cursor, Claude Code, etc... )
 
 ## Step 1: Setup Project (10 min)
 
+We'll be working with the [Bezkoder Angular 17 + Node.js project](https://github.com/bezkoder/angular-17-node-project). This is a simple CRUD (Create, Read, Update, Delete) application for managing tutorials. It's deliberately simple so we can focus on learning the PRP framework rather than wrestling with complex application logic.
+
 Choose either **Option A** (using your AI agent) or **Option B** (manual setup):
 
-### Option A: Setup with AI Agent (Recommended)
+### Option A: Setup with AI Agent
 
-Ask your AI coding agent. These are the prompts I use with Claude Code. It only took this prompt to get everything set up: 
+⚠️ This path requires giving the agent access to the terminal, meaning running it with the yolo mode flag: ` gemini --yolo`, allows the AI to automatically execute actions and commands without user confirmation. 
+
+If you still feel uncomfortable with this, then proceed to the Option B: manual setup to start building the confidence.  
+
+These are the prompts I use with Claude Code. It only took this prompt to get everything set up: 
 
 ```
 Can you checkout and start the server and client of this project locally?
@@ -56,6 +62,8 @@ npm install
 ng serve --port 8081 &
 ```
 
+Detailed instructions in https://github.com/bezkoder/angular-17-node-project.git
+
 ### Verify Everything Works
 
 You should have:
@@ -69,25 +77,21 @@ Test it: Open http://localhost:8081 in your browser and try creating a tutorial.
 
 Create a context file for your AI agent:
 
-**For Claude Code:** Create `.claude/CLAUDE.md`
-**For Gemini CLI:** Create `.gemini/GEMINI.md`
+**For Gemini CLI:** Create `GEMINI.md` at the rood folder.
 
-Ask your AI agent:
-
-```
-Create a [CLAUDE.md / GEMINI.md] file for this project.
-Include project structure, tech stack, and key conventions.
-```
+- You can start by copying [this example](https://codelabs.developers.google.com/gemini-cli-hands-on#9), and adjusting it a bit
 
 ## Step 3: Install PRP Framework (10 min)
 
-### Clone the PRP Repository
+### Clone the PRP Repository and copy the contents
 
-```bash
-git clone https://github.com/Wirasm/PRPs-agentic-eng.git
-```
+- See instructions in https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README.md
+- It's ok to copy al files to a `.claude/` folder, we will move what we need and adjust it to a `.gemini/` folder later.
+
 
 ### Review the PRP Commands
+
+From the PRP `README-for-DUMMIES` file in the PRP repo
 
 Read these to understand the workflow:
 - [The Project Foreman (/prp-task-create)](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#-the-project-foreman-prp-task-create) - Creates implementation plans
@@ -95,26 +99,11 @@ Read these to understand the workflow:
 
 ### Copy PRP Commands to Your Project
 
-**For Claude Code:**
-```bash
-cd angular-17-node-project
-mkdir -p .claude/commands/prp-commands
-cp ../PRPs-agentic-eng/.claude/commands/prp-commands/* .claude/commands/prp-commands/
-```
+- Review these two slash commands in your project, should be inside `.claude/commands/prp-commands`
+- Copy them to the gemini folder e.g. `.gemini/commands/prp-commands` (Create the path if it does not exist)
+- Adapt the command format to the agentic tool, in this case to Gemini: See [Gemini Custom Slash Command blog post](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands)
+- Tip: You can try and ask your AI agent to do this adaptation for you, giving it the documentation
 
-**For Gemini CLI:**
-```bash
-cd angular-17-node-project
-mkdir -p .gemini/commands/prp-commands
-# Copy and adapt commands according to: https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands
-```
-
-Ask your AI agent to help adapt if needed:
-
-```
-I need to adapt these Claude Code slash commands to [your agent format].
-Can you help me convert them?
-```
 
 ## Step 4: Try the PRP Workflow (15 min)
 
@@ -152,15 +141,13 @@ Add a "category" field to tutorials:
 Describe task → /prp-task-create → Review plan → /prp-task-execute → Test
 ```
 
-Refer to [The Step-by-Step Process](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#the-step-by-step-process-) for detailed guidance.
+Refer to [The Step-by-Step Process](https://github.com/Wirasm/PRPs-agentic-eng/blob/development/README-for-DUMMIES.md#the-step-by-step-process-) to refresh the workflow and commands.
 
 ## Next Steps (Optional)
 
 ### Try More Exercises
 
-1. **Add Search by Category** - Filter tutorials by category
-2. **Add Rating System** - Let users rate tutorials 1-5 stars
-3. **Try `/prp-spec-create` → `/prp-spec-execute`** - For more complex features
+- **Try `/prp-spec-create` → `/prp-spec-execute`** - For more complex features
 
 ### Learn More
 
@@ -192,7 +179,3 @@ angular-17-node-project/
 - [Project Repository](https://github.com/bezkoder/angular-17-node-project)
 - [PRP Framework](https://github.com/Wirasm/PRPs-agentic-eng)
 - [Gemini Custom Slash Commands](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands)
-
----
-
-**Questions?** Ask your AI coding agent for help. That's what they're there for!
