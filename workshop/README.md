@@ -104,11 +104,20 @@ Read these to understand the workflow:
 
 - Review these two slash commands in your project, should be inside `.claude/commands/prp-commands`
 - Copy them to the gemini folder e.g. `.gemini/commands/prp-commands` (Create the path if it does not exist)
-- Adapt the command format to the agentic tool, in this case to Gemini: See [Gemini Custom Slash Command blog post](https://cloud.google.com/blog/topics/developers-practitioners/gemini-cli-custom-slash-commands)
-- Tip: You can try and ask your agentic tool to do this adaptation for you, giving it the documentation
+
 
 
 ## Step 4: Try the PRP Workflow (15 min)
+
+For each command bellow that we want to use, we need to adapt it to the gemini format, which is `.toml`
+
+- Adapt the command format to the agentic tool, in this case to Gemini: See [Gemini CLI custom commands](See https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/custom-commands.md)
+- This prompt worked for me:
+
+```
+Can you please change the @.gemini/commands/prp-spec-create.md  so it complies with the gemini cli format for custom commands? https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/custom-commands.md . Among the changes they most be .toml format with that extension. Read the documents and propose a plan of action to modify the file  
+```
+
 
 ### Exercise: Add a Category Field
 
