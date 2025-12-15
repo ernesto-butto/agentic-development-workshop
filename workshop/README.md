@@ -80,6 +80,9 @@ Create a context file for your agentic tool:
 **For Gemini CLI:** Create `GEMINI.md` at the root folder.
 
 - You can start by copying [this example](https://codelabs.developers.google.com/gemini-cli-hands-on#9), and adjusting it a bit
+- CHECK: Can you start and stop all the services by asking the agentic tool? e.g. `Start all the services for this project`
+- Did it work? Do you need to fix the GEMINI.md file?
+- CHECK 2: Can you stop them?
 
 ## Step 3: Install PRP Framework (10 min)
 
