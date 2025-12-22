@@ -279,6 +279,7 @@ Get started with our [Quick Start Workshop](workshop/README.md) - learn the PRP 
 - [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) - Official best practices sections 1.a and 1.b cover CLAUDE.md
 - [PRP Framework Repository](https://github.com/Wirasm/PRPs-agentic-eng)
 - [Effective Context Engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [Context Engineering for AI Agents: Lessons from Building Manus](https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus)
 
 ### Tool-Specific Documentation
 
